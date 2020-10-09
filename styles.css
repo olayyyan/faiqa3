@@ -1,0 +1,155 @@
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: auto;
+}
+.dim{
+opacity: 0.5;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.learnmore:hover{
+  cursor: pointer;
+}
+.fab:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+.hide{
+  position: absolute;
+  visibility: hidden;
+}
+.displayNone{
+  display: none;
+}
+
+/* ////////////////////// START "Categories & Locations Filters-Larger Bootstrap Checkbox CSS Code" //////////////////// */
+:root {
+  /* larger checkbox */
+}
+:root label.checkbox-bootstrap input[type=checkbox] {
+  /* hide original check box */
+  opacity: 0;
+  position: absolute;
+  /* find the nearest span with checkbox-placeholder class and draw custom checkbox */
+  /* draw checkmark before the span placeholder when original hidden input is checked */
+  /* disabled checkbox style */
+  /* disabled and checked checkbox style */
+  /* when the checkbox is focused with tab key show dots arround */
+}
+:root label.checkbox-bootstrap input[type=checkbox] + span.checkbox-placeholder {
+  width: 14px;
+  height: 14px;
+  border: 1px solid;
+  border-radius: 3px;
+  /*checkbox border color*/
+  border-color: #737373;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 7px 0 -20px;
+  vertical-align: middle;
+  text-align: center;
+}
+:root label.checkbox-bootstrap input[type=checkbox]:checked + span.checkbox-placeholder {
+  background: #0ccce4;
+}
+:root label.checkbox-bootstrap input[type=checkbox]:checked + span.checkbox-placeholder:before {
+  display: inline-block;
+  position: relative;
+  vertical-align: text-top;
+  width: 5px;
+  height: 9px;
+  /*checkmark arrow color*/
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  /*can be done with post css autoprefixer*/
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+}
+:root label.checkbox-bootstrap input[type=checkbox]:disabled + span.checkbox-placeholder {
+  background: #ececec;
+  border-color: #c3c2c2;
+}
+:root label.checkbox-bootstrap input[type=checkbox]:checked:disabled + span.checkbox-placeholder {
+  background: #d6d6d6;
+  border-color: #bdbdbd;
+}
+:root label.checkbox-bootstrap input[type=checkbox]:focus:not(:hover) + span.checkbox-placeholder {
+  outline: 1px dotted black;
+}
+:root label.checkbox-bootstrap.checkbox-lg input[type=checkbox] + span.checkbox-placeholder {
+  width: 26px;
+  height: 26px;
+  border: 2px solid;
+  border-radius: 5px;
+  /*checkbox border color*/
+  border-color: #737373;
+}
+:root label.checkbox-bootstrap.checkbox-lg input[type=checkbox]:checked + span.checkbox-placeholder:before {
+  width: 9px;
+  height: 15px;
+  /*checkmark arrow color*/
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+/* ////////////////////// END "Categories & Locations Filters-Larger Bootstrap Checkbox CSS Code" //////////////////// */
+
+/* //////////////////////// START INCREASE CHECKBOX SIZE ////////////////////////////// */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #0ccce4;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-bottom: 5px;
+ }
+/* //////////////////////// END INCREASE CHECKBOX SIZE ////////////////////////////// */
+
+  .vendorsContainer{
+    margin: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .brdr{
+    border-right: solid 2px;
+    border-color: orange;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .brdr{
+    border-bottom: solid 2px;
+    border-color: orange;
+  }
+}
+/* ///////////////////////////////// Accordion Code /////////////////////// */
+.accordianBackGroundColor{
+  background-color: #17a2b8;
+}
+.accordion-menu > a {
+  display: block;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+.accordion-menu > a:after {
+  content: "\f078"; /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+}
+.accordion-menu > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+/* ////////////////////////// END Accordion Code ////////////////////// */
