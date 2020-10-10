@@ -36,7 +36,7 @@
   }
 //////////////////// END Disabling and Enabling Locations Checkboxes ////////////////
 
-//////////////////// START Disabling and Enabling Brands Checkboxes ////////////////
+//////////////////// START Disabling and Enabling Mechanical Brands Checkboxes ////////////////
   function disableAllMechanicalBrandCheckboxes(){
     document.querySelector("#duPontBrandsCheckbox").checked = false;
     document.querySelector("#colstonBrandsCheckbox").checked = false;
@@ -51,9 +51,9 @@
     document.querySelector("#colstonBrandsCheckbox").disabled = false;
     document.querySelector("#kohlerBrandsCheckbox").disabled = false;
   }
-//////////////////// END Disabling and Enabling Brands Checkboxes //////////////////
+//////////////////// END Disabling and Enabling Mechanical Brands Checkboxes //////////////////
 
-/////////////////// START Disabling and Enabling Materials Checkboxes /////////////
+/////////////////// START Disabling and Enabling Mechanical Materials Checkboxes /////////////
 function disableAllMechanicalMaterialCheckboxes(){
   document.querySelector("#pipesMaterialsCheckbox").checked = false;
   document.querySelector("#plumbingMaterialsCheckbox").checked = false;
@@ -68,7 +68,7 @@ function enableAllMechanicalMaterialCheckboxes(){
   document.querySelector("#plumbingMaterialsCheckbox").disabled = false;
   document.querySelector("#fittingsMaterialsCheckbox").disabled = false;
 }
-/////////////////// END Disabling and Enabling Materials Checkboxes ////////////
+/////////////////// END Disabling and Enabling Mechanical Materials Checkboxes ////////////
 
 //////////////////////////// START LOCATIONS IF STATEMENTS//////////////////////
 if (document.querySelector("#allLocations").checked
@@ -173,7 +173,7 @@ else{
   }
 //////////////////////////// END LOCATIONS IF STATEMENTS/////////////////////////
 
-//////////////////////////// START MATERIALS IF STATEMENTS/////////////////////////
+//////////////////////////// START MECHANICAL MATERIALS IF STATEMENTS/////////////////////////
 if (document.querySelector("#allMechanicalMaterialsCheckbox").checked
 || (!document.querySelector("#pipesMaterialsCheckbox").checked
 && !document.querySelector("#plumbingMaterialsCheckbox").checked
@@ -244,9 +244,9 @@ else{
       }
     }
   }
-//////////////////////////// END MATERIALS IF STATEMENTS/////////////////////////
+//////////////////////////// END MECHANICAL MATERIALS IF STATEMENTS/////////////////////////
 
-//////////////////////////// START BRANDS IF STATEMENTS/////////////////////////
+//////////////////////////// START MECHANICAL BRANDS IF STATEMENTS/////////////////////////
 if (document.querySelector("#allMechanicalBrandsCheckbox").checked
 || (!document.querySelector("#duPontBrandsCheckbox").checked
 && !document.querySelector("#colstonBrandsCheckbox").checked
@@ -317,7 +317,7 @@ else{
         }
       }
     }
-//////////////////////////// END BRANDS IF STATEMENTS/////////////////////////
+//////////////////////////// END MECHANICAL BRANDS IF STATEMENTS/////////////////////////
 
 ///////////////// START UPDATING finalMechanicalSelectionsArray ///////////////////////
   mechanicalMaterialSelectionsArray.forEach(pushMechanicalMaterial);
