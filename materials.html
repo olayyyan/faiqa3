@@ -3,16 +3,21 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8"/>
     <title>FAIQA</title>
-    <!-- Bootstrap css & javascript links -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <!-- CSS Style File -->
-     <link rel="stylesheet" href="styles.css">
-     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/ab5937a0f1.js" crossorigin="anonymous"></script>
+
+         <!-- Bootstrap css & javascript links -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <!-- CSS Style File -->
+         <link rel="stylesheet" href="styles.css">
+         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        <!-- Font Awesome for All Icons other than the quantity buttons-->
+        <script src="https://kit.fontawesome.com/ab5937a0f1.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome fpr Quantity Buttons-->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -353,23 +358,6 @@
       <div class="col-sm-12 col-md-9 col-lg-9">
         <div class="p-2 mw-100" style="background-color: #eeeeee">
             <div class="row mt-4">
-              <div class="col-sm-12 col-md-6 col-lg-3 east material electricalMaterial ge switch">
-                <div class="card w-100 mb-2" style="width: 18rem;">
-                  <img class="card-img-top" src="images\electrical\lamp1.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">GE Switch</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Eastern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
               <div class="col-sm-12 col-md-6 col-lg-3 west material electricalMaterial ge lamp">
                 <div class="card w-100 mb-2" style="width: 18rem;">
                   <img class="card-img-top" src="images\electrical\lamp2.jpg" alt="Card image cap">
@@ -382,7 +370,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct1" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct1" class="form-control input-number text-center" value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct1" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -399,7 +399,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button"name="pdct2" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct2" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct2" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -416,7 +428,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct3" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct3" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct3" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -433,7 +457,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct4" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct4" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct4" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -450,7 +486,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct5" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct5" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct5" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -467,7 +515,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct6" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct6" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct6" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -484,7 +544,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct7" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct7" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct7" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -501,7 +573,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct8" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct8" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct8" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -518,7 +602,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct9" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct9" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct9" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -535,7 +631,19 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                          <button type="button" name="pdct10" class="btn btn-danger btn-number"  data-type="minus" data-field="quantity">
+                            <span class="fa fa-minus"></span>
+                          </button>
+                      </span>
+                      <input type="text" id="pdct10" class="form-control input-number text-center"value="0" min="0" max="100">
+                      <span class="input-group-btn center">
+                          <button type="button" name="pdct10" class="btn btn-success btn-number"  data-type="plus" data-field="quantity">
+                              <span class="fa fa-plus"></span>
+                          </button>
+                      </span>
+                  </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -552,7 +660,48 @@
                     <li class="list-group-item">Vestibulum at eros</li>
                   </ul>
                   <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" name="pdct11" class="btn btn-danger btn-number"  data-type="minus" data-field="quantity">
+                          <span class="fa fa-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" id="pdct11" class="form-control input-number text-center"value="0" min="0" max="100">
+                    <span class="input-group-btn center">
+                        <button type="button" name="pdct11" class="btn btn-success btn-number"  data-type="plus" data-field="quantity">
+                            <span class="fa fa-plus"></span>
+                        </button>
+                    </span>
+                  </div>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3 east material electricalMaterial ge switch">
+                <div class="card w-100 mb-2" style="width: 18rem;">
+                  <img class="card-img-top" src="images\electrical\lamp1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">GE Switch</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Eastern Province</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <div class="card-body">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" name="pdct12" class="btn btn-danger btn-number"  data-type="minus" data-field="quantity">
+                              <span class="fa fa-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" id="pdct12" class="form-control input-number text-center"value="0" min="0" max="100">
+                        <span class="input-group-btn center">
+                            <button type="button" name="pdct12" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                <span class="fa fa-plus"></span>
+                            </button>
+                        </span>
+                    </div>
                     <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
@@ -570,7 +719,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="quantityButtonsScript2.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="materialsFilter.js" type="text/javascript"></script>
   </body>
