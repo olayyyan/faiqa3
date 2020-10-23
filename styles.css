@@ -3,6 +3,11 @@ body {
     box-sizing: border-box;
     width: auto;
 }
+/* To Disable Double Tap Zoom in IOS and Android */
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+/*///////////////// END ////////////////////////*/
 .dim{
 opacity: 0.5;
 }
