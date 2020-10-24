@@ -11,6 +11,12 @@ body {
 .form-control.input-number{
   margin-left: 25px;
   margin-right: 25px;
+  margin-bottom: 5px;
+}
+#price
+{
+  font-weight: bold;
+  margin-left: 5px;
 }
 .dim{
 opacity: 0.5;
@@ -129,6 +135,7 @@ input[type=checkbox]
     margin: 100px;
   }
 }
+
 @media screen and (min-width: 768px) {
   footer .brdr{
     border-right: solid 2px;
