@@ -270,37 +270,8 @@
         </div>
       </div>
     </div>
-    <!-- ////////////////////////////////////////// END OF ALL CATEGORIES ACCRODIAN MENUS /////////////////////////////// -->
-        <!-- <div class="checkbox ml-2">
-          <label class="checkbox-bootstrap checkbox-lg">
-              <input type="checkbox" id="allCategories">
-              <span class="checkbox-placeholder"></span>
-              All
-          </label>
-        </div>
-        <div class="checkbox ml-2">
-          <label class="checkbox-bootstrap checkbox-lg">
-             <input type="checkbox" id="electrical">
-             <span class="checkbox-placeholder"></span>
-             Electrical
-          </label>
-        </div>
-        <div class="checkbox ml-2">
-          <label class="checkbox-bootstrap checkbox-lg">
-              <input type="checkbox" id="mechanical">
-              <span class="checkbox-placeholder"></span>
-              Mechanical
-          </label>
-        </div>
-        <div class="checkbox ml-2">
-          <label class="checkbox-bootstrap checkbox-lg">
-             <input type="checkbox" id="finishing">
-             <span class="checkbox-placeholder"></span>
-             Finishing
-          </label>
-        </div> -->
-    </div>
   </div>
+</div>
 <!-- //////////////////////////////// END CATEGORY FILTERING MENUS /////////////////////////////////// -->
 
 <!-- //////////////////////////////// START LOCATION FILTERING MENUS /////////////////////////////////// -->
@@ -358,46 +329,43 @@
       <div class="col-sm-12 col-md-9 col-lg-9 disable-dbl-tap-zoom">
         <div class="p-2 mw-100" style="background-color: #eeeeee">
             <div class="row mt-4">
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 west material electricalMaterial ge lamp">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 west material electricalMaterial ge lamp">
+                <div class="card w-100 mb-2">
                   <img class="card-img-top" src="images\electrical\lamp2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">GE Lamp</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Western Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body">
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button type="button" name="pdct1" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
-                              <span class="fa fa-minus"></span>
-                            </button>
-                        </span>
-                        <input type="text" id="pdct1" class="form-control input-number text-center" value="0" min="0" max="100">
-                        <span class="input-group-btn center">
-                            <button type="button" name="pdct1" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
-                                <span class="fa fa-plus"></span>
-                            </button>
-                        </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
+                    <span style="margin-left: 20px; margin-bottom: 5px;">Western Province</span>
+                    <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
+                    <div class="card-body">
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <button type="button" name="pdct1" class="btn btn-danger btn-number" data-type="minus" data-field="quantity">
+                                <span class="fa fa-minus"></span>
+                              </button>
+                          </span>
+                          <input type="text" id="pdct1" class="form-control input-number text-center" value="0" min="0" max="100">
+                          <span class="input-group-btn">
+                              <button type="button" name="pdct1" class="btn btn-success btn-number" data-type="plus" data-field="quantity">
+                                  <span class="fa fa-plus"></span>
+                              </button>
+                          </span>
+                      </div>
+                    </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 middle material electricalMaterial philips lamp">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 middle material electricalMaterial philips lamp">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\lamp3.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Philips Lamp</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Middle Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Middle Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -412,21 +380,20 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: </span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 south material electricalMaterial philips switch">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 south material electricalMaterial philips switch">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\lamp4.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Philips Switch</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Southern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Southern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -441,21 +408,21 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link"></a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 north material electricalMaterial siemens powerPanel">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 north material electricalMaterial siemens powerPanel">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\siemens_power_panel.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Siemens Power Panel</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Northern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Northern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -470,20 +437,21 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link"></a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 middle material electricalMaterial saudiCables powerCable">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 middle material electricalMaterial saudiCables powerCable">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\Cable.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Saudi Cables - Power Cable</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Middle Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Middle Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   </ul>
                   <div class="card-body">
                     <div class="input-group">
@@ -499,21 +467,21 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link"></a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 east material electricalMaterial schneider breaker">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 east material electricalMaterial schneider breaker">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\breaker.JPG" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Schneider Electric Breaker</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Eastern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Eastern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -528,21 +496,20 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 south material electricalMaterial ge powerPanel">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 south material electricalMaterial ge powerPanel">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\electrical\GE_Power_Panel.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">General Electric Power Panel</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Southern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Southern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -557,21 +524,20 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 north material mechanicalMaterial kohler pipe">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 north material mechanicalMaterial kohler pipe">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\mechanical\pipes1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Kohler Pipe</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Northern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Northern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -586,21 +552,20 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 east material mechanicalMaterial dupont plumbing">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 east material mechanicalMaterial dupont plumbing">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\mechanical\plumbing1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">DuPont Plumbing</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Eastern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Eastern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -615,21 +580,21 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link"></a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 west material mechanicalMaterial colston fitting">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 west material mechanicalMaterial colston fitting">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\mechanical\fittings1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Colston Fittings</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Western Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Western Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                       <span class="input-group-btn">
@@ -644,21 +609,20 @@
                           </button>
                       </span>
                   </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 middle material mechanicalMaterial kohler fitting">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 middle material mechanicalMaterial kohler fitting">
+                <div class="card w-100 mb-2" >
                   <img class="card-img-top" src="images\mechanical\fittings2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Kohler Fittings</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Middle Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Middle Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                   <div class="input-group">
                     <span class="input-group-btn">
@@ -673,21 +637,20 @@
                         </button>
                     </span>
                   </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 east material electricalMaterial ge switch">
-                <div class="card w-100 mb-2" style="width: 18rem;">
+              <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3 east material electricalMaterial ge switch">
+                <div class="card w-100 mb-2">
                   <img class="card-img-top" src="images\electrical\lamp1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">GE Switch</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Eastern Province</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
+                  <span style="margin-left: 20px; margin-bottom: 5px;">Eastern Province</span>
+                  <span style="margin-left: 20px; margin-right: 20px; border: 1px solid; border-color: orange;">PRICE:<span id="price">15</span> SAR/PIECE</span>
                   <div class="card-body">
                     <div class="input-group">
                         <span class="input-group-btn">
@@ -702,8 +665,9 @@
                             </button>
                         </span>
                     </div>
-                    <a href="#" class="card-link">Another link</a>
                   </div>
+                  <span style="font-weight: bold; padding-left: 25px;">TOTAL: SAR</span>
+                  <div class="text-center"><button type="button" class="btn btn-lg btn-warning pt-1 pb-1"><img src="images\icons\add-to-cart.png" alt="add-to-card"> Add to Cart</button></div>
                 </div>
               </div>
             </div>
