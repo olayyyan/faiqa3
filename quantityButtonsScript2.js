@@ -8,12 +8,14 @@ const quantityButton = document.querySelectorAll(".btn-number");
      var productQuantityInput = document.querySelector("#"+productName);
      var currentQuantityValue = productQuantityInput.value;
      var buttonType = quantityButton[i].getAttribute("data-type");
-
+     var productPrice = parseInt(document.querySelector("#"+productName+"Price").innerText);
+      console.log(productPrice);
      if (buttonType == 'minus')
        {
          if(parseInt(productQuantityInput.value) > productQuantityInput.getAttribute("min"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)-1;
+           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);     // console.log(productTotalCost);
          }
        }
      else if (buttonType == 'plus')
@@ -21,6 +23,7 @@ const quantityButton = document.querySelectorAll(".btn-number");
          if(parseInt(productQuantityInput.value) < productQuantityInput.getAttribute("max"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)+1;
+           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);     // console.log(productTotalCost);
          }
        }
     });
