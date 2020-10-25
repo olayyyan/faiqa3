@@ -129,11 +129,17 @@ input[type=checkbox]
   padding: 10px;
   margin-bottom: 5px;
  }
-/* //////////////////////// END INCREASE CHECKBOX SIZE ////////////////////////////// */
 
+/* //////////////////////// END INCREASE CHECKBOX SIZE ////////////////////////////// */
+/*//////////////////////// START ADD TO CART STYLES /////////////////////////////////*/
+
+/*//////////////////////// END ADD TO CART STYLES /////////////////////////////////*/
   .vendorsContainer{
     margin: 100px;
   }
+.fa-shopping-cart.checkoutDesktop
+{
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -146,6 +152,17 @@ input[type=checkbox]
   footer .brdr{
     border-bottom: solid 2px;
     border-color: orange;
+  }
+
+}
+@media screen and (max-width: 991px){
+  .checkoutDesktop{
+    display: none;
+  }
+}
+@media screen and (min-width: 992px){
+  .checkoutMobile{
+    display: none;
   }
 }
 /* ///////////////////////////////// Accordion Code /////////////////////// */
@@ -167,5 +184,4 @@ input[type=checkbox]
 .accordion-menu > a[aria-expanded="true"]:after {
   content: "\f077"; /* fa-chevron-up */
 }
-
 /* ////////////////////////// END Accordion Code ////////////////////// */
