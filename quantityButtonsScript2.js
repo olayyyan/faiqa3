@@ -1,5 +1,10 @@
 
 const quantityButton = document.querySelectorAll(".btn-number");
+var checkoutBadge    = document.querySelectorAll(".checkoutBadge");
+var checkoutBadge0   = parseInt(checkoutBadge[0].innerText);
+var checkoutBadge1   = parseInt(checkoutBadge[1].innerText);
+
+console.log(parseInt(checkoutBadge[1].innerText));
 
  for (let i = 0; i < quantityButton.length; i++) {
      quantityButton[i].addEventListener("click", function()
@@ -9,13 +14,18 @@ const quantityButton = document.querySelectorAll(".btn-number");
      var currentQuantityValue = productQuantityInput.value;
      var buttonType = quantityButton[i].getAttribute("data-type");
      var productPrice = parseInt(document.querySelector("#"+productName+"Price").innerText);
-      console.log(productPrice);
+     var checkoutBadge = document.querySelectorAll(".checkoutBadge");
+
      if (buttonType == 'minus')
        {
          if(parseInt(productQuantityInput.value) > productQuantityInput.getAttribute("min"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)-1;
-           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);     // console.log(productTotalCost);
+           checkoutBadge0 = checkoutBadge0-1;
+           checkoutBadge1 = checkoutBadge1-1;
+
+           document.querySelectorAll(".checkoutBadge")[0].innerText = checkoutBadge0;
+           document.querySelectorAll(".checkoutBadge")[1].innerText = checkoutBadge1;
          }
        }
      else if (buttonType == 'plus')
@@ -23,7 +33,11 @@ const quantityButton = document.querySelectorAll(".btn-number");
          if(parseInt(productQuantityInput.value) < productQuantityInput.getAttribute("max"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)+1;
-           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);     // console.log(productTotalCost);
+           checkoutBadge0 = checkoutBadge0+1;
+           checkoutBadge1 = checkoutBadge1+1;
+
+           document.querySelectorAll(".checkoutBadge")[0].innerText = checkoutBadge0;
+           document.querySelectorAll(".checkoutBadge")[1].innerText = checkoutBadge1;
          }
        }
     });
