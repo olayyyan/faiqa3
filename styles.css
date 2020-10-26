@@ -41,7 +41,9 @@ opacity: 0.5;
 .displayNone{
   display: none;
 }
-
+a:hover{
+  text-decoration: none;
+}
 /* ////////////////////// START "Categories & Locations Filters-Larger Bootstrap Checkbox CSS Code" //////////////////// */
 :root {
   /* larger checkbox */
@@ -139,11 +141,14 @@ input[type=checkbox]
   .vendorsContainer{
     margin: 100px;
   }
-.fa-shopping-cart.checkoutDesktop
+.checkoutDesktop
 {
   position: relative;
+  cursor: pointer;
 }
-
+.checkoutMobile{
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   footer .brdr{
     border-right: solid 2px;
