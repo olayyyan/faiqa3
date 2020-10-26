@@ -21,7 +21,7 @@ console.log(parseInt(checkoutBadge[1].innerText));
          if(parseInt(productQuantityInput.value) > productQuantityInput.getAttribute("min"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)-1;
-           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);
+           document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice;
 
            checkoutBadge0 = checkoutBadge0-1;
            checkoutBadge1 = checkoutBadge1-1;
@@ -34,7 +34,7 @@ console.log(parseInt(checkoutBadge[1].innerText));
          if(parseInt(productQuantityInput.value) < productQuantityInput.getAttribute("max"))
          {
            productQuantityInput.value = parseInt(productQuantityInput.value)+1;
-           console.log(document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice);
+           document.querySelector("#"+productName+"TotalCost").innerText = (productQuantityInput.value)*productPrice;
 
            checkoutBadge0 = checkoutBadge0+1;
            checkoutBadge1 = checkoutBadge1+1;
