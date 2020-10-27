@@ -1,0 +1,9 @@
+
+.boughtItems{
+  display: grid;
+  grid-template-rows: auto;
+}
+.itemCard,.itemsContainer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
