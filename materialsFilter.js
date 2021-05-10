@@ -2,7 +2,7 @@
 //  Developed by: Ali Khalid Alyami                   //
 //  Date: 08-Oct-2020                                 //
 //  Email: braintalked@gmail.com                      //
-//  Twitter:@ali_idev                                 //
+//  Twitter:@alimobiledev                             //
 ////////////////////////////////////////////////////////
 
 ////////////////////////// START EVENT LISTENER /////////////////////////////////////
